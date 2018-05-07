@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/section.css">
+	<link rel="stylesheet" type="text/css" href="css/aside.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="imagenes/mario.ico">
+
+	<title>Juego de dados</title>
+
+
+</head>
+
+<body>
+
+	<header>
+     	<input type="button" id="recarga" value="recargar">
+		<h1 id="titulo">trabajo de simulacion de sistemas</h1>
+	</header>
+
+	<nav>
+		<div id="dadoSorteo">
+    		<input type="button" id="botonSorteo" value="Sortear Turno" > <br>	
+    		<img src="imagenes/dado0.png" id="dadoSorteo1" alt="">
+    		<img src="imagenes/dado0.png" id="dadoSorteo2" alt="">
+    	</div>
+
+    	<div id="sorteoGanador">
+    		<h4>Resultado del ganador</h4> 
+        	<div class="imagenesDados">
+      			<img id="dado0" src="imagenes/dado0.png" alt="">
+        		<img id="dado1" src="imagenes/dado0.png" alt="">
+        		<img id="dado2" src="imagenes/dado0.png" alt="">
+        		<img id="dado3" src="imagenes/dado0.png" alt="">
+        		<img id="dado4" src="imagenes/dado0.png" alt="">
+        	</div>	
+			<h4>RESULTADOS</h4>
+			<h2 id="turnoGanador"></h2>
+		</div>
+	</nav>
+
+	<section>
+
+		<article class="usuarioFinal">
+      	<div class="usuario">
+        	<h4 class="tituloUsuario">Persona 1</h4>
+        	<img id="imagenUsuario" src="imagenes/persona1.jpg" height="75px" width="75px"> <br>
+        	<input type="button" id="mano1" value="Tirar Dados"> <br>
+       		<ul id="puntajesPersona1" class="listaGrupo">
+         		<li class="listaPuntaje">
+          			<h3>puntaje<span id="puntaje1"> 0 </span></h3>
+          			<h3 id="resultadoTiroPersona1" ></h3>
+        		</li>
+       		</ul>
+     	</div>
+     	</article>
+
+     	<article class="usuarioFinal">
+      	<div class="usuario">
+        	<h4 class="tituloUsuario">persona 2</h4>
+        	<img id="imagenUsuario" src="imagenes/computador.jpg" height="75px" width="75px"> <br>
+        	<input type="button" id="mano2" value="Tirar Dados"> <br>
+       		<ul id="puntajesMaquina" class="listaGrupo">
+         		<li class="listaPuntaje">
+          			<h3>puntaje<span id="puntaje2"> 0 </span></h3>
+          			<h3 id="resultadoTiroMaquina" ></h3>
+        		</li>
+       		</ul>
+     	</div>
+     	</article>
+
+	</section>
+	
+
+	<aside>
+		<h5>REGLAS DEL JUEGO</h5>
+		<ul>
+			<li>Se juega con una cantidad de turnos establecida</li>
+			<li> Se juega con 5 dados</li>
+			<li>5 dados iguales (50 puntos)</li>
+			<li>4 dados iguales (40 puntos)</li>
+			<li>3 dados iguales (30 puntos)</li>
+			<li>2 dados iguales (30 puntos)</li>
+			<li>1,2,3,4,5 o 2,3,4,5,6 (20 puntos)</li>
+			<li>El con mayor puntaje al terminar los tiros GANA!!</li>
+		</ul>
+	
+	</aside> 
+
+	<footer>
+        <h3>grupo de simulacion de sistemas</h3>
+        &copy;SimuCompany.
+	</footer> 
+
+<script type="text/javascript" src="main.js"></script>
+
+
+
+</body>
+</html>
