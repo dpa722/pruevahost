@@ -4,20 +4,17 @@
 <head>
 	<meta charset="utf-8">
 	
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/nav.css">
-	<link rel="stylesheet" type="text/css" href="css/section.css">
-	<link rel="stylesheet" type="text/css" href="css/aside.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
 
 	<link rel="shortcut icon" type="image/x-icon" href="imagenes/mario.ico">
+  <style type="text/css">body{background-image: url("imagenes/dados.jpg");}</style>
 
 	<title>Juego de dados</title>
 
-
 </head>
 
-<body>
+
+<body >
 
 	<header>
      	<input type="button" id="recarga" value="recargar">
@@ -46,16 +43,16 @@
 	</nav>
 
 	<section>
-
 		<article class="usuarioFinal">
       	<div class="usuario">
-        	<h4 class="tituloUsuario">Persona 1</h4>
+        	<h4 class="tituloUsuario">Persona</h4>
         	<img id="imagenUsuario" src="imagenes/persona1.jpg" height="75px" width="75px"> <br>
-        	<input type="button" id="mano1" value="Tirar Dados"> <br>
+        	<input type="button" id="mano1" value="Tirar Dados" disabled="true"> <br>
        		<ul id="puntajesPersona1" class="listaGrupo">
          		<li class="listaPuntaje">
           			<h3>puntaje<span id="puntaje1"> 0 </span></h3>
-          			<h3 id="resultadoTiroPersona1" ></h3>
+          			<h3>El jugador 1 saco los dados: </h3>
+                <h3 id="resultadodadosPersona1" ></h3>
         		</li>
        		</ul>
      	</div>
@@ -63,18 +60,18 @@
 
      	<article class="usuarioFinal">
       	<div class="usuario">
-        	<h4 class="tituloUsuario">persona 2</h4>
+        	<h4 class="tituloUsuario">jugador 2</h4>
         	<img id="imagenUsuario" src="imagenes/computador.jpg" height="75px" width="75px"> <br>
-        	<input type="button" id="mano2" value="Tirar Dados"> <br>
+        	<input type="button" id="mano2" value="Tirar Dados" disabled="true"> <br>
        		<ul id="puntajesMaquina" class="listaGrupo">
          		<li class="listaPuntaje">
           			<h3>puntaje<span id="puntaje2"> 0 </span></h3>
-          			<h3 id="resultadoTiroMaquina" ></h3>
+          			<h3>El jugador 2 saco los dados: </h3>
+                <h3 id="resultadodadosjugador2" ></h3>
         		</li>
        		</ul>
      	</div>
      	</article>
-
 	</section>
 	
 
@@ -90,16 +87,18 @@
 			<li>1,2,3,4,5 o 2,3,4,5,6 (20 puntos)</li>
 			<li>El con mayor puntaje al terminar los tiros GANA!!</li>
 		</ul>
-	
 	</aside> 
 
+
 	<footer>
-        <h3>grupo de simulacion de sistemas</h3>
-        &copy;SimuCompany.
+        <h3>
+          grupo de simulacion de sistemas<br>
+          &copy;SimuCompany.
+        </h3>
 	</footer> 
 
-<script type="text/javascript" src="main.js"></script>
 
+<script type="text/javascript" src="main.js"></script>
 
 
 </body>
